@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN AUDIO SOUND SYSTEM</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at center, #0f2027, #000000);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px 10px;
+            background: rgba(0,0,0,0.8);
+        }
+
+        header img {
+            width: 420px;
+            max-width: 95%;
+            filter: drop-shadow(0 0 25px #00c6ff);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 10px #00c6ff);
+            }
+            to {
+                filter: drop-shadow(0 0 35px #00c6ff);
+            }
+        }
+
+        .hero {
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero p {
+            color: #aaa;
+        }
+
+        .audio-box {
+            margin: 40px auto;
+            padding: 25px;
+            width: 320px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="1 HN FIX.png" alt="HN Audio Logo">
+</header>
+
+<div class="hero">
+    <h1>HN AUDIO SOUND SYSTEM</h1>
+    <p>Sound System Profesional • Bass Mantap • Siap Event</p>
+</div>
+
+<div class="audio-box">
+    <h3>Demo Sound</h3>
+    <audio id="audioPlayer" src="audio-demo.mp3"></audio><br>
+    <button onclick="audioPlayer.play()">Play</button>
+    <button onclick="audioPlayer.pause()">Pause</button>
+</div>
+
+<footer>
+    © 2026 HN AUDIO SOUND SYSTEM
+</footer>
+
+</body>
+</html>
